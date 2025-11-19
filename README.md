@@ -43,13 +43,49 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+'''
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by:Nanditha Shaji
+RegisterNumber: 25012970
 */
+
+**full adder**
+
+module exfull (a,b,c,sum,carry);
+
+input a,b,c;
+
+output sum,carry;
+
+xor g1(sum,a,b,c);
+
+assign carry =(a&b)|(b&c)|(c&a);
+
+endmodule 
+
+**full subtractor**
+module fullsub(a,b,c,diff,borrow);
+
+input a,b,c;
+
+output diff,borrow;
+
+xor g1(diff,a,b);
+
+assign borrow =(b&c)|(~a&c)|(~a&b);
+
+endmodule
+'''
 
 **RTL Schematic**
 
+
+<img width="1912" height="954" alt="Screenshot 2025-11-19 202936" src="https://github.com/user-attachments/assets/c44e0912-7bc3-41e5-bfbb-4479d913946a" />
+
+
 **Output Timing Waveform**
+<img width="1910" height="993" alt="Screenshot 2025-11-19 101005" src="https://github.com/user-attachments/assets/338b39bf-aa72-4094-b119-c9406b55a680" />
+
+<img width="1898" height="964" alt="Screenshot 2025-11-19 203800" src="https://github.com/user-attachments/assets/ffaabdd7-6916-4ae0-ac51-ac4211955b9f" />
 
 **Result:**
 

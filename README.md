@@ -77,6 +77,7 @@ endmodule
 '''
 
 **RTL Schematic**
+<img width="1864" height="934" alt="Screenshot 2025-11-19 194720" src="https://github.com/user-attachments/assets/4cb19de8-6e90-4c8e-b963-00b27600bcbf" />
 
 
 <img width="1912" height="954" alt="Screenshot 2025-11-19 202936" src="https://github.com/user-attachments/assets/c44e0912-7bc3-41e5-bfbb-4479d913946a" />
